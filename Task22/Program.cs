@@ -1,17 +1,17 @@
-﻿// Напишите программу, которая принимает на вход число (N) и выдает таблицу квадратов чисел от 1 до N;
-
-Console.WriteLine("Введите число");
-int N = Convert.ToInt32(Console.ReadLine());
+﻿// Вывод таблицы квадратов чисел от 1 до N
+Console.WriteLine("Напишите число");
+int N =Convert.ToInt32(Console.ReadLine());
 int i = 1;
-if (N <= 0)
+if (N <= 1)
 {
- Console.WriteLine("Некорректно заданы данные");   
+    Console.WriteLine("Неправильные данные");
 }
 else
 {
-while ( i < N );{
-    int j = i * i;
-    Console.WriteLine(j);
-    i++;
+    while (i <= N)
+    {
+        int kvadrat = i * i ;
+        Console.WriteLine(kvadrat);
+        i++;
     }
 }
