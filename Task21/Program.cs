@@ -18,4 +18,5 @@ double distanceX = Math.Pow((pointA[0] - pointB[0]), 2);
 double distanceY = Math.Pow((pointA[1] - pointB[1]), 2);
 double distance = distanceX + distanceY;
 double dlina = Math.Sqrt(distance);
-Console.WriteLine(dlina);
+double dlinafinale = Math.Round(dlina, 3);
+Console.WriteLine(dlinafinale);
